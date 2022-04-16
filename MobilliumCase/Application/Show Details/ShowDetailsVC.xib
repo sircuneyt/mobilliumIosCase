@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFPRODISPLAYBOLD.OTF">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SFPRODISPLAYMEDIUM.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SFPRODISPLAYREGULAR.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowDetailsVC" customModule="MobilliumCase" customModuleProvider="target">
+            <connections>
+                <outlet property="showAvarage" destination="rms-mX-9yJ" id="SWn-LX-cNf"/>
+                <outlet property="showDate" destination="hft-F1-ls9" id="v1u-je-kqU"/>
+                <outlet property="showOverview" destination="jbE-oc-SMc" id="8xV-sn-ipr"/>
+                <outlet property="showPoster" destination="EwZ-ut-joz" id="Lpr-vt-DtA"/>
+                <outlet property="showTitle" destination="FXD-HM-mvc" id="y9L-Gj-YwE"/>
+                <outlet property="view" destination="2kp-eT-4hD" id="erJ-Ya-XeT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2kp-eT-4hD">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="EwZ-ut-joz">
+                    <rect key="frame" x="0.0" y="44" width="414" height="256"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="256" id="Nla-KM-NWb"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" image="IMDB Logo@0.0x" translatesAutoresizingMaskIntoConstraints="NO" id="RqD-R4-zXP">
+                    <rect key="frame" x="16" y="316" width="49" height="24"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rate Icon" translatesAutoresizingMaskIntoConstraints="NO" id="G0x-h4-8Pd">
+                    <rect key="frame" x="73" y="320" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="Lj0-Bo-mot"/>
+                        <constraint firstAttribute="height" constant="16" id="Scd-wT-AIg"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rms-mX-9yJ" userLabel="avarage">
+                    <rect key="frame" x="93" y="318" width="31" height="16"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TZT-aV-DQ4">
+                    <rect key="frame" x="132" y="326" width="4" height="4"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.72549019609999998" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="4" id="Cd9-95-KWW"/>
+                        <constraint firstAttribute="height" constant="4" id="jbm-Qq-FmO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hft-F1-ls9" userLabel="date">
+                    <rect key="frame" x="140" y="318" width="31" height="16"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbE-oc-SMc" userLabel="overview">
+                    <rect key="frame" x="16" y="396" width="382" height="18"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXD-HM-mvc" userLabel="title">
+                    <rect key="frame" x="16" y="356" width="382" height="24"/>
+                    <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="xxS-tD-G0f"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hft-F1-ls9" firstAttribute="top" secondItem="EwZ-ut-joz" secondAttribute="bottom" constant="18" id="1ad-MF-yhP"/>
+                <constraint firstItem="RqD-R4-zXP" firstAttribute="leading" secondItem="xxS-tD-G0f" secondAttribute="leading" constant="16" id="3Hf-Y8-520"/>
+                <constraint firstItem="xxS-tD-G0f" firstAttribute="trailing" secondItem="EwZ-ut-joz" secondAttribute="trailing" id="9QJ-bp-z32"/>
+                <constraint firstItem="TZT-aV-DQ4" firstAttribute="top" secondItem="EwZ-ut-joz" secondAttribute="bottom" constant="26" id="A1C-qc-RvW"/>
+                <constraint firstItem="FXD-HM-mvc" firstAttribute="leading" secondItem="xxS-tD-G0f" secondAttribute="leading" constant="16" id="EDM-nH-Y8T"/>
+                <constraint firstItem="EwZ-ut-joz" firstAttribute="leading" secondItem="xxS-tD-G0f" secondAttribute="leading" id="Q1N-aT-5RM"/>
+                <constraint firstItem="G0x-h4-8Pd" firstAttribute="leading" secondItem="RqD-R4-zXP" secondAttribute="trailing" constant="8" id="Rea-mO-bCi"/>
+                <constraint firstItem="jbE-oc-SMc" firstAttribute="leading" secondItem="xxS-tD-G0f" secondAttribute="leading" constant="16" id="SnB-sN-gJb"/>
+                <constraint firstItem="xxS-tD-G0f" firstAttribute="trailing" secondItem="jbE-oc-SMc" secondAttribute="trailing" constant="16" id="UVR-FD-1n6"/>
+                <constraint firstItem="EwZ-ut-joz" firstAttribute="top" secondItem="xxS-tD-G0f" secondAttribute="top" id="Upb-Vn-jdg"/>
+                <constraint firstItem="G0x-h4-8Pd" firstAttribute="top" secondItem="EwZ-ut-joz" secondAttribute="bottom" constant="20" id="VQ7-S6-0G7"/>
+                <constraint firstItem="RqD-R4-zXP" firstAttribute="top" secondItem="EwZ-ut-joz" secondAttribute="bottom" constant="16" id="aw4-Et-X45"/>
+                <constraint firstItem="hft-F1-ls9" firstAttribute="leading" secondItem="TZT-aV-DQ4" secondAttribute="trailing" constant="4" id="hW8-lQ-f60"/>
+                <constraint firstItem="xxS-tD-G0f" firstAttribute="trailing" secondItem="FXD-HM-mvc" secondAttribute="trailing" constant="16" id="lxO-Gv-bWq"/>
+                <constraint firstItem="jbE-oc-SMc" firstAttribute="top" secondItem="FXD-HM-mvc" secondAttribute="bottom" constant="16" id="oDA-JS-Dk0"/>
+                <constraint firstItem="TZT-aV-DQ4" firstAttribute="leading" secondItem="rms-mX-9yJ" secondAttribute="trailing" constant="8" id="pZi-X5-JKk"/>
+                <constraint firstItem="rms-mX-9yJ" firstAttribute="leading" secondItem="G0x-h4-8Pd" secondAttribute="trailing" constant="4" id="qRo-JL-fQf"/>
+                <constraint firstItem="rms-mX-9yJ" firstAttribute="top" secondItem="EwZ-ut-joz" secondAttribute="bottom" constant="18" id="tiu-WR-Qfp"/>
+                <constraint firstItem="FXD-HM-mvc" firstAttribute="top" secondItem="RqD-R4-zXP" secondAttribute="bottom" constant="16" id="z7b-p1-tyk"/>
+            </constraints>
+            <point key="canvasLocation" x="324.63768115942031" y="-58.258928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMDB Logo@0.0x" width="49" height="24"/>
+        <image name="Rate Icon" width="16" height="16"/>
+    </resources>
+</document>
